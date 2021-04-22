@@ -7,25 +7,27 @@ function Results(props) {
             <table className="table">
                 <thead>
                     <tr>
-                        <th>Photo</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>City</th>
-                        <th>State</th>
+                        <th scope="col">Photo</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">City</th>
+                        <th scope="col">State</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th><img src={Results.picture}></img></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                {props.results.map(result => (
+                    <tr key={result.login.uuid}>
+                        <td><img alt="headshot" src={result.picture}></img></td>
+                        <td>{result.name.first}</td>
+                        <td>{result.name.last}</td>
+                        <td>{result.email}</td>
+                        <td>{result.phone}</td>
+                        <td>{result.location.city}</td>
+                        <td>{result.location.state}</td>
                     </tr>
+                ))}
                 </tbody>
             </table>
         </div>

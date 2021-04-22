@@ -11,7 +11,7 @@ class Gallery extends Component {
     employees: [], input: "", sorted: "ascending", searchResults: []};
 
   componentDidMount() {
-    axios.get("https://randomuser.me/api/?results=100").then(data => {
+    API.get("https://randomuser.me/api/?results=100").then(data => {
       console.log(data.data)
       this.setState({ 
         employees: data.data.results,
