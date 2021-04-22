@@ -18,7 +18,7 @@ function Results(props) {
                 </thead>
                 <tbody>
                     <tr>
-                        <th><img></img></th>
+                        <th><img src={Results.picture}></img></th>
                         <th></th>
                         <th></th>
                         <th></th>

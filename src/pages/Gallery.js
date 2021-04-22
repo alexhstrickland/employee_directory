@@ -23,12 +23,6 @@ class Gallery extends Component {
     })
   }
 
-  handleEmpSort = event => {
-  
-    this.setState(newState);
-    
-  };
-
   handleInputChange = event => {
     const {name, value} = event.target;
 
@@ -44,17 +38,36 @@ class Gallery extends Component {
     })
   };
 
-  sortFirstName = () = {};
+  sortFirstName = () => {
+    const firstName = this.state.employees.sort((a, b) => a.name.first.localeCompare(b.name.first));
+    this.setState({
+      employees: firstName;
+    })
+  };
 
-  sortLastName = () = {};
+  sortLastName = () => {
+    const lastName = this.state.employees.sort((a, b) => a.name.last.localeCompare(b.name.first));
+      this.setState({
+        employees: lastName;
+      })
+  }
 
-  sortEmail = () = {};
 
-  sortPhone = () = {};
+  sortCity = () => {
+    const city = this.state.employees.sort((a, b) => a.name.last.localeCompare(b.name.first));
+      this.setState({
+        employees: lastName;
+      })
+  };
 
-  sortCity = () = {};
+  sortState = () => {
+    const state = this.state.employees.sort((a, b) => a.location.city.localeCompare(b.name.first));
+      this.setState({
+        employees: lastName;
+      })
+  };
 
-  sortState = () = {};
+};
 
 
   render() {
