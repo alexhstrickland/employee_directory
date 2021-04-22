@@ -1,26 +1,6 @@
 {
-  "name": "employee_directory",
-  "homepage": "https://alexhstrickland.github.io/employee-directory",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexhstrickland/employee_directory.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alexhstrickland/employee_directory/issues"
-  },
   "dependencies": {
     "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "bootstrap": "^4.6.0"
   }
 }
