@@ -40,44 +40,47 @@ class Gallery extends Component {
 
   sortFirstName = () => {
     const firstName = this.state.employees.sort((a, b) => a.name.first.localeCompare(b.name.first));
-    this.setState({
-      employees: firstName;
-    })
+      this.setState({
+        employees: firstName
+      })
   };
 
   sortLastName = () => {
     const lastName = this.state.employees.sort((a, b) => a.name.last.localeCompare(b.name.first));
       this.setState({
-        employees: lastName;
+        employees: lastName
       })
-  }
+  };
 
 
   sortCity = () => {
     const city = this.state.employees.sort((a, b) => a.location.city.localeCompare(b.location.city));
       this.setState({
-        employees: city;
+        employees: city
       })
   };
 
   sortState = () => {
     const state = this.state.employees.sort((a, b) => a.location.state.localeCompare(b.location.state));
       this.setState({
-        employees: state;
+        employees: state
       })
   };
 
-};
+
 
 
   render() {
     return (
+      <>
       <Jumbotron />
-      <Search />
-      <Results />
+      <Search handleInputChange={this.handleInputChange} input={this.state.input}/>
+      <Results results = {this.state.employees} firstName = {this.firstName} lastName = { this.lastName} city = {this.city} state = {this.state} />
+      </>
     );
-  }
-}
+  };
+
+};
 
 
 export default Gallery;
