@@ -54,16 +54,16 @@ class Gallery extends Component {
 
 
   sortCity = () => {
-    const city = this.state.employees.sort((a, b) => a.name.last.localeCompare(b.name.first));
+    const city = this.state.employees.sort((a, b) => a.location.city.localeCompare(b.location.city));
       this.setState({
-        employees: lastName;
+        employees: city;
       })
   };
 
   sortState = () => {
-    const state = this.state.employees.sort((a, b) => a.location.city.localeCompare(b.name.first));
+    const state = this.state.employees.sort((a, b) => a.location.state.localeCompare(b.location.state));
       this.setState({
-        employees: lastName;
+        employees: state;
       })
   };
 
