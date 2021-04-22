@@ -19,7 +19,7 @@ function Results(props) {
                 <tbody>
                 {props.results.map(result => (
                     <tr key={result.login.uuid}>
-                        <td><img alt="headshot" src={result.picture}></img></td>
+                        <td><img alt="headshot" src={result.picture.large}></img></td>
                         <td>{result.name.first}</td>
                         <td>{result.name.last}</td>
                         <td>{result.email}</td>
