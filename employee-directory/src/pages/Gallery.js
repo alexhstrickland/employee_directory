@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Results from "../components/results";
 import Jumbotron from "../components/jumbotron";
-import search from "../components/search";
+import Search from "../components/search";
 import axios from "axios";
 
 
