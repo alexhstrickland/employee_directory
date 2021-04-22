@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Search(props) {
     return (
-        <form>
-            <div className="form-group">
+        <form className="bg-dark">
+            <div className="form-group bg-dark" >
                 <input
                     onChange={props.handleInputChange}
                     value={props.input}

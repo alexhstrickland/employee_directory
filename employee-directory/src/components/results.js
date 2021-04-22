@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Results(props) {
     return (
         <div className="container">
-            <table className="table">
+            <table style={{color: "white"}} className="table">
                 <thead>
                     <tr>
                         <th scope="col">Photo</th>

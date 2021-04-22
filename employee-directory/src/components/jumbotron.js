@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Jumbotron(props) {
     return (
-    <div className="jumbotron bg-dark">
+    <div className="jumbotron" style={{ background: "#2b2828"}}>
         <div className="container">
-            <h1 className="display">
+            <h1 style={{ color: "white", textAlign: "center" }} className="display">
                 Employee Directory
             </h1>
         </div>
