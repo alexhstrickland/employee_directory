@@ -3,7 +3,6 @@ import API from "../utils/API";
 import Results from "../components/results";
 import Jumbotron from "../components/jumbotron";
 import Search from "../components/search";
-import axios from "axios";
 
 
 class Gallery extends Component {
