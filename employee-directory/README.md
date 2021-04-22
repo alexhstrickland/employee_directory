@@ -23,6 +23,8 @@
   ## Usage
   
   [![Website Screenshot](public/assets/images/screenshot.png)]
+  
+  [Deployed Application](https://alexhstrickland.github.io/employee_directory/)
 
   ## License
   This project is covered under the ISC license. Visit the following link for more information on this license: [ISC](https://opensource.org/licenses/ISC)
