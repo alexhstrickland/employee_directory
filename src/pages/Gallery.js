@@ -10,7 +10,6 @@ class Gallery extends Component {
   state = {
     employees: [], input: "", sorted: "ascending", searchResults: []};
 
-  // When the component mounts, load the next dog to be displayed
   componentDidMount() {
     axios.get("https://randomuser.me/api/?results=100").then(data => {
       console.log(data.data)
